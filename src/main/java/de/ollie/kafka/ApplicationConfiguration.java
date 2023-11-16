@@ -12,10 +12,10 @@ public class ApplicationConfiguration {
 	@Value(value = "${spring.kafka.bootstrap-servers:localhost:9092}")
 	private String bootstrapAddress;
 
-	@Value(value = "${spring.kafka.group-id:ollie-kafka-test}")
+	@Value(value = "${spring.kafka.group-id:blueprint-default-group}")
 	private String groupId;
 
-	@Value(value = "${spring.kafka.topic-name:ollie-kafka-test}")
+	@Value(value = "${spring.kafka.topic-name:blueprint-default-topic}")
 	private String topicName;
 
 }
